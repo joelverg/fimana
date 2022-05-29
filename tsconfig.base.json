@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fimana/core": ["libs/core/src/index.ts"]
+      "@fimana/auth": ["libs/auth/src/index.ts"],
+      "@fimana/core": ["libs/core/src/index.ts"],
+      "@fimana/course": ["libs/course/src/index.ts"],
+      "@fimana/expences": ["libs/expences/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

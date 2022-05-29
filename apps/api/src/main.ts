@@ -16,7 +16,8 @@ async function bootstrap() {
   app.setGlobalPrefix(globalPrefix)
   const port = process.env.PORT || 3333
   await app.listen(port)
-  Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`)
+  Logger.log('Listening at http://Localhost:' + port + '/' + globalPrefix)
+  Logger.log('Listening at http://Localhost:' + port + '/graphql')
   Logger.log(`Running in ${config.get("environment")} mode`);
 }
 
