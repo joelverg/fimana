@@ -19,6 +19,10 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
       autoSchemaFile: true,
       driver: ApolloDriver
     }),
+    GraphQLModule.forRoot({
+      autoSchemaFile: true,
+      playground: true,
+    }),
   ],
   controllers: [],
   providers: [CoreResolver],
